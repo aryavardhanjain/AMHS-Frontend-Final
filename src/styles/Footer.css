@@ -1,0 +1,110 @@
+/* Footer.css */
+.footer {
+  margin-top: 10rem;
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.footer-logo-section {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-btn {
+  background-color: #23246c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer-btn img {
+  height: 20px;
+  margin-left: 10px;
+}
+
+.footer-services {
+  flex: 2 1 300px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.services-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  column-count: 2;
+}
+
+.services-list li {
+  margin-bottom: 5px;
+  color: #2f2f2f;
+}
+
+.services-list a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.services-list a:hover {
+  text-decoration: underline;
+}
+
+.footer-blog {
+  flex: 1 1 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  height: 100%;
+}
+
+.footer-blog Button {
+  align-self: center;
+}
+
+.footer-bottom {
+  background-color: #23246c;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}

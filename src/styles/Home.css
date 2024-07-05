@@ -1,0 +1,171 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+.home-section {
+  width: 100vw;
+  height: 100vh;
+  /* padding-top: 5vh; */
+  overflow: hidden;
+  /* margin-top: 2vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  /* max-width: 1200px; */
+  height: 100%;
+}
+
+.text-section {
+  flex: 2;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.text-section p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.button-group {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.image-section {
+  flex: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.phone-container {
+  padding-top: 5vh;
+  margin-top: 3vh;
+  position: relative;
+  height: 37.5rem;
+  width: 18rem; /* Adjust width as needed to fit the phone frame */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counselling-img {
+  height: 60%;
+  width: 90%;
+  position: absolute;
+  z-index: 2;
+}
+
+.phone-img {
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  filter: drop-shadow(8px 8px 10px grey);
+}
+
+.slider-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slider-title {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.image-slider .slide {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.image-slider .slide-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-right: 0;
+  object-fit: cover;
+  max-height: 500px;
+}
+
+.testimonial-slider .slide {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.testimonial-slider .slide-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+.testimonial-slider .slide-content {
+  max-width: 800px;
+  text-align: left;
+}
+
+.testimonial-slider .slide-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.slide-rating {
+  margin: 0.5rem 0;
+}
+
+.slide-rating .star {
+  color: #f39c12;
+  margin-right: 0.25rem;
+}
+
+.slide-text {
+  font-size: 1rem;
+  color: #555;
+}

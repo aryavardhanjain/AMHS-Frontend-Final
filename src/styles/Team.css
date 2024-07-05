@@ -1,0 +1,94 @@
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgb(212, 222, 251);
+  border-radius: 50%;
+}
+
+.flip-card-front {
+  background: linear-gradient(
+    120deg,
+    rgb(1, 1, 51) 30%,
+    rgb(42, 42, 87) 88%,
+    rgb(205, 204, 206) 40%,
+    rgb(255, 160, 160) 78%
+  );
+  color: white;
+}
+
+.flip-card-back {
+  background: linear-gradient(
+    120deg,
+    rgb(82, 177, 250) 60%,
+    rgb(208, 225, 253) 88%,
+    rgb(222, 225, 250) 40%,
+    rgba(30, 40, 189, 0.603) 48%
+  );
+  color: rgb(4, 0, 115);
+  transform: rotateY(180deg);
+}
+
+.profile-image {
+  height: 280px;
+  width: 265px;
+  border-radius: 50%;
+  padding-left: 13px;
+}
+
+.introduction-box {
+  background-color: rgba(29, 0, 96, 0.6);
+  color: rgb(255, 255, 255);
+  position: relative;
+  width: 80%;
+  margin-left: 120px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+  filter: drop-shadow(30px 10px 20px rgb(98, 91, 141));
+}
+
+.introduction-text {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+  font-style: italic;
+  padding: 50px;
+  margin-top: 200px;
+}
+
+.title {
+  line-height: 1.5;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.flip-card {
+  position: relative;
+  background-color: transparent;
+  width: 290px;
+  height: 300px;
+  font-family: sans-serif;
+  z-index: 1;
+  margin: 2rem;
+  float: left;
+  shape-outside: circle();
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}

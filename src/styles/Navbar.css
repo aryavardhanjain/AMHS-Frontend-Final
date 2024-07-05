@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+}
+
+.App {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 7rem;
+  width: 100%;
+  background-color: rgba(247, 248, 250, 1);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  top: 0;
+  z-index: 99;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left img {
+  height: 3.5rem;
+  margin-right: 1.5rem;
+  padding-bottom: 0.7rem;
+}
+
+.nav-middle {
+  flex-grow: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-middle a,
+.nav-middle .dropbtn {
+  text-decoration: none;
+  color: #151566;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1.15rem;
+  position: relative;
+  padding: 0.7rem 1.4rem;
+  transition: color 0.25s ease-out;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.nav-middle a:hover,
+.nav-middle .dropbtn:hover {
+  color: #fb181b;
+}
+
+.nav-middle a::after,
+.nav-middle .dropbtn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(7, 7, 7);
+  transition: transform 0.25s ease-out;
+  transform-origin: bottom left;
+  transform: scaleX(0);
+}
+
+.nav-middle a:hover::after,
+.nav-middle .dropbtn:hover::after {
+  transform-origin: bottom right;
+  transform: scaleX(1);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 16rem;
+  box-shadow: 0rem 0.8rem 1.6rem 0rem rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 1rem;
+  padding: 1rem 0rem;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: #12123d;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+  max-height: 20rem;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
